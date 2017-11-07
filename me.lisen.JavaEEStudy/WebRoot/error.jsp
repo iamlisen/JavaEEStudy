@@ -1,5 +1,5 @@
-<%@ page language="java" import="java.util.*" pageEncoding="GBK" contentType="text/html"%>
-<%@ page errorPage="error.jsp" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page isErrorPage = "true" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -9,21 +9,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
   <head>
     <base href="<%=basePath%>">
-    <title>My JSP 'index.jsp' starting page</title>
+    
+    <title>My JSP 'error.jsp' starting page</title>
+    
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+
   </head>
   
   <body>
-  <%
-  String UserName = "www.lisen.me";
-   %>
-	<jsp:forward page="/StaticInclude/info.jsp">
-		<jsp:param name="name" value="<%=UserName %>"/>
-	</jsp:forward>
+    错误页 <br>
   </body>
 </html>
