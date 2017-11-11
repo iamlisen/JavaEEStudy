@@ -7,9 +7,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="JavaEEStudy" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="jspsmartupload" />
-        </element>
       </element>
     </root>
   </artifact>
